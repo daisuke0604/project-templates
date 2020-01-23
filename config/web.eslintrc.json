@@ -1,0 +1,36 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "cypress/globals": true
+  },
+  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+  "plugins": ["prettier", "cypress"],
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "sourceType": "module"
+  },
+  "rules": {
+    "max-len": "warn",
+    "no-console": "off",
+    "no-unused-vars": "warn",
+    "strict": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "tabWidth": 2,
+        "trailingComma": "es5"
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["./cypress/plugins/*.js"],
+      "parserOptions": {
+        "sourceType": "script"
+      }
+    }
+  ]
+}
