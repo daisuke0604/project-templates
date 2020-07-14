@@ -6,7 +6,7 @@
     "cypress/globals": true
   },
   "extends": ["eslint:recommended", "plugin:prettier/recommended"],
-  "plugins": ["prettier", "cypress"],
+  "plugins": ["cypress"],
   "parserOptions": {
     "ecmaVersion": 2017,
     "sourceType": "module"
